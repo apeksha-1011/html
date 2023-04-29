@@ -1,0 +1,119 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    /* border: 5px solid red ; */
+    display: flex;
+    font-size: 20px;
+    background-color: antiquewhite;
+    justify-content: flex-end;
+    align-items: center;
+    background:linear-gradient(to left , purple,pink);
+ 
+}
+.navlinks{
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 90px;
+    text-transform:uppercase;
+}
+.items{ 
+    padding: 0px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    margin-top: 20px;
+    /* border: 5px solid red; */
+    /* background-image: url('banner.jpg'); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    color: rgb(193, 201, 212);
+    /* background-position: center; */
+    height: 400px;
+    animation-name: ani1;
+    animation-duration:7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    /* text-shadow: 10px 8px 4px rgb(3, 27, 56); */
+}
+@keyframes ani1{
+    0%{
+        text-shadow: 10px -20px 10px rgb(3, 27, 56);
+    }
+    20%{
+        text-shadow: 10px 20px 10px rgb(74, 48, 131);
+    }
+    
+}
+
+
+.banner::before{
+    content: "";
+    background-image: url('banner.jpg');
+    position:absolute;
+    left: 0%;
+    top: 0%;
+    height: 550px;
+    width: 100%;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+
+
+::placeholder{
+    font-size: 30px;
+}
+
+input{
+    outline: none;
+    border:none;
+    width: 400px;
+    height: 40px;
+    font-size: 30px;
+    border-bottom: 4px solid purple;
+}
+
+.h1{
+    color:purple;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    text-decoration:underline;
+    text-decoration-style:double ;
+    margin-bottom: 70px;
+}
+tr{
+    height: 100px;
+}
+#btn{
+    color:aliceblue;
+    background-color: purple;
+    border-radius: 10px;
+    width: 200px;
+   
+}
+.table
+{
+
+    margin-top: 50px;
+    border: 5px solid purple;
+    width: 50%;
+    border-radius: 20px;
+    height: 600px;
+    margin-left: 25%;
+    
+    margin-bottom: 70px;
+
+    box-shadow: 20px 20px 10px 3px rgb(108, 11, 108) ;
+}
+
+
